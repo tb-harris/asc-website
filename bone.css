@@ -1,0 +1,25 @@
+/* Adapted from https://codepen.io/sasstantrum/pen/deQQLm */
+
+.bone {
+    background: ghostwhite;
+    height: 2.6rem;
+    width: 50%;
+    max-width: 300px;
+    position: relative;
+}
+.bone::before, .bone::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -1.3rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    background: ghostwhite;
+    box-shadow: 0 2.6rem 0 ghostwhite;
+}
+.bone::before {
+    left: -1.3rem;
+}
+.bone::after {
+    right: -1.3rem;
+}
